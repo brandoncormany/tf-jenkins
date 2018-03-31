@@ -1,6 +1,4 @@
 resource "aws_efs_file_system" "jenkins_efs" {
-  creation_token = "jenkins_efs"
-
   tags {
     Name = "jenkins_efs"
   }
