@@ -18,7 +18,7 @@ resource "aws_subnet" "publicB" {
 
 resource "aws_subnet" "publicC" {
   vpc_id = "${aws_vpc.jenkins_vpc.id}"
-  cidr_block = "10.255.2.0/24"
+  cidr_block = "10.255.3.0/24"
 
   tags {
     Name = "PubicC"
