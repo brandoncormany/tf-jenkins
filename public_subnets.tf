@@ -2,6 +2,7 @@ resource "aws_subnet" "publicA" {
   vpc_id = "${aws_vpc.jenkins_vpc.id}"
   cidr_block = "10.255.1.0/24"
   availability_zone = "${var.region}a"
+  map_public_ip_on_launch = true
 
   tags {
     Name = "PubicA"
@@ -12,6 +13,7 @@ resource "aws_subnet" "publicB" {
   vpc_id = "${aws_vpc.jenkins_vpc.id}"
   cidr_block = "10.255.2.0/24"
   availability_zone = "${var.region}b"
+  map_public_ip_on_launch = true
 
   tags {
     Name = "PubicB"
@@ -22,6 +24,7 @@ resource "aws_subnet" "publicC" {
   vpc_id = "${aws_vpc.jenkins_vpc.id}"
   cidr_block = "10.255.3.0/24"
   availability_zone = "${var.region}c"
+  map_public_ip_on_launch = true
 
   tags {
     Name = "PubicC"
