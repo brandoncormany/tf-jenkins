@@ -38,6 +38,13 @@ resource "aws_elb" "jenkinsELB" {
     lb_protocol       = "http"
   }
 
+  listener {
+    instance_port     = 50000
+    instance_protocol = "tcp"
+    lb_port           = 50000
+    lb_protocol       = "tcp"
+  }
+
   health_check {
     healthy_threshold   = 2
     unhealthy_threshold = 2
