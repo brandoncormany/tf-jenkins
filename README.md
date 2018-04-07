@@ -9,4 +9,11 @@ Configures the following:
 * Create an ECS Cluster named jenkins
 * Add ASG to create instance add to ECS cluster previously created and attach to EFS via launch_configuration
 
-# Make sure to create IAM role before hand to include ECS access. 
+# Make sure to create IAM role before hand to include ECS access.
+
+To Be Completed
+* Add in creation of ECS Task for Jenkins
+* Externalize jenkins_home location to variable
+* Creation of ECS service for previously created ECS Task
+* Make sure task runs container at root so there is no permissions errors for container access EFS store.
+
